@@ -1,4 +1,4 @@
-import { of } from './../node_modules/acorn/dist/acorn.d';
+
 export default {
     name:'blog',
     type:'document',
