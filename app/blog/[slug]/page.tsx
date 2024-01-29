@@ -2,6 +2,9 @@ import { fullBolg } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+
+export const revalidate = 30; // revalidate every 30 seconds
+
 async function getData(slug:string){
     const query = `
     *[_type=='blog' && slug.current == '${slug}']{
